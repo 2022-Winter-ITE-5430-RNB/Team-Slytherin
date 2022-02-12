@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.header{
+  font-size: medium;
+  font-family: Cambria;
+  }
+  
+  .header-main{
+    font-size: large;
+    font-family: Cambria;
+    }

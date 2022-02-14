@@ -6,16 +6,22 @@ import Home from './components/Home/Home';
 import Navigation from './components/Home/Navigation';
 import About from './components/About/About';
 import Events from './components/Events/Events';
+import Raise from './components/Raise/Raise';
+
+
+
 
 const App = () => {
   return (    
+    
     <BrowserRouter>    
       <Navigation />
       <Routes>
         <Route path='home' element={<Home />} />        
         <Route path='FAQS' element={<FAQS />} />
         <Route path='Events' element={<Events />} />
-        <Route path='About' element={<About />} />
+         <Route path='About' element={<About />} />
+        <Route path='Raise' element={<Raise />} />
       </Routes>
 
   </BrowserRouter>

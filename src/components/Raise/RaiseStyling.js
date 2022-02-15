@@ -11,5 +11,13 @@ export const RaiseStylediv = styled.div`
     padding-bottom: 2.5rem
     position: relative;
     min-height: 100vh;
-`
-
+    ont-family: arial;
+  text-transform: uppercase;
+  text-align: center;
+  border:1px black solid;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: rgb(234, 239, 241);  
+  
+    `
+    

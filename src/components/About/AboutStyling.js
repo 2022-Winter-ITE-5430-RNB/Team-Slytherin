@@ -9,4 +9,5 @@ export const AboutStylediv = styled.div`
     padding-bottom: 2.5rem
     position: relative;
     min-height: 100vh;
+    border: 2px;
 `

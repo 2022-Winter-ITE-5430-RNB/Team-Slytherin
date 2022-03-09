@@ -76,7 +76,7 @@ const About = () => {
                     <div class="col-md-12">
                       
                         <div class="md-form mb-0">
-                            <label for="subject" class="">Comments</label>
+                            <label for="subject" class="">Habbits</label>
                             <input type="text" id="subject" name="subject" class="form-control"/>
                            
                         </div>
@@ -97,7 +97,7 @@ const About = () => {
             </form>
 
             <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Post</a>
             </div>
             <div class="status"></div>
         </div>

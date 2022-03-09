@@ -39,7 +39,34 @@ const Raise = () => {
          </p>
 
       <h2>Giving Space</h2>
+      <p>
+      Dogs need space to be a dog. I often see owners getting frustrated with their dog's
+       during a walk because they are pulling them from one thing to the next. Other owners
+        have dogs walking down the street in a heel position head down and tail still.   
+        We often forget how unnatural it is for a dog to walk by our side down a street for
+         long periods of time.  It is much like expecting a three year old to walk through 
+         a toy store without pulling you to look at any of the toys on the shelves. 
+      </p>
       <h2> Foster Good Self Esteem</h2>
+      <p>
+      Dogs have self esteem?  You bet. Dogs are creatures that learn. Mistakes are part of
+       learning. Pet owners need to be careful to let their dog work out problems for 
+       themselves.  Do not micromanage or help them too much, especially when they are 
+       trying to learn something new.  Just stand back and give them a few seconds to work
+        it out.  If they get confused, just restart the challenge in an easier form or give
+         your dog a hint.
+        For example, you are trying to teach your dog to sit. Rather than pushing on his
+         hind end, pulling on the leash,  or repeating "sit, sit, sit," stand silent and 
+         wait. If he needs help, restart the problem by backing up several steps, say "sit" 
+         once, pause a second, then lure his nose up and back with a treat in your hand. 
+         Reward!
+      </p>
+      <h2>Love your Pet</h2>
+      <p>
+      You have this dog for the rest of his life. Sometimes it is hard to enjoy your dog 
+      after he misbehaved. Remind yourself to love your dog independent of his behavior. 
+      He loves you unconditionally.
+      </p>
     </RaiseStylediv>
   )
 }

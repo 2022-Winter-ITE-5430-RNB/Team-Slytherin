@@ -1,63 +1,121 @@
-import React from 'react'
-import { Button, InputGroup } from 'react-bootstrap'
-import { FormControl } from 'react-bootstrap'
-import { AboutStylediv } from './AboutStyling'
-import { Form } from 'react-bootstrap'
-import { Dropdown } from 'bootstrap'
-import { Container } from 'react-bootstrap'
-import { Row } from 'react-bootstrap'
+import React, { useState } from "react";
+
+const FORM_ENDPOINT = "";
 
 
 const About = () => {
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = () => {
+
+    setTimeout(() => {
+
+      setSubmitted(true);
+
+    }, 100);
+
+  };
+
+
+  if (submitted) {
+
+    return (
+
+      <>
+
+        <div className="text-2xl">Thank you!</div>
+
+        <div className="text-md">For Share your experience</div>
+
+      </>
+
+    );
+
+  }
+
+
   return (
-    <AboutStylediv>
-    <h1>Share Experience How to Raise a Pet </h1>
-    <Container>
-    <Row className="justify-content-md-center ">
+
+    <section class="mb-4">
+
+
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Share Experience How to Raise a Pet</h2>
+   
+    <p class="text-center w-responsive mx-auto mb-5">It will help others who are intrested and want to adopt a pet</p>
+
+    <div class="row">
+
+     
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+  
+                <div class="row">
+
+               
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="name" class="">Pet Type</label>
+                            <input type="text" id="name" name="name" class="form-control"/>
+                           
+                        </div>
+                    </div>
+              
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="email" class="">Basic needs </label>
+                            <input type="text" id="email" name="email" class="form-control"/>
+                           
+                        </div>
+                    </div>
                 
-              <Form.Select aria-label="Default select example">
-                  <option>Pet Type</option>
-                  <option value="canine">Canine</option>
-                  <option value="bird">Bird</option>
-                  <option value="other">Other(Domestic Animal)</option>
-                </Form.Select>
-                <p></p>
-                <InputGroup className="mb-3">
-                <InputGroup.Text id="breed">Breed</InputGroup.Text>
-                <FormControl
-                  placeholder="Breed"
-                  aria-label="Breed"
-                  aria-describedby="Breed"
-                />
-              </InputGroup>
-              
-              
-              <InputGroup>
-                <InputGroup.Text>Basic needs of a Pet</InputGroup.Text>
-                <FormControl as="textarea" aria-label="Basic needs" />
-              </InputGroup>
-              <p></p>
-              <Button variant="dark">Send</Button>
-              </Row>
-              </Container>
-</AboutStylediv>
-  )
-}
 
-export default About
+                </div>
+          
+                <div class="row">
+                    <div class="col-md-12">
+                      
+                        <div class="md-form mb-0">
+                            <label for="subject" class="">Comments</label>
+                            <input type="text" id="subject" name="subject" class="form-control"/>
+                           
+                        </div>
+                    </div>
+                </div>
+            <br />
+                <div class="row">
+             
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <label for="message">Share experience</label>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+  
+         
+
+    </div>
+
+</section>
+
+  );
+
+};
+
+
+export default About;
 
 
 
 
-// import React from 'react';
-// import { AboutStylediv } from './AboutStyling'
 
-// const About = () => {
-//  return (
-//   <AboutStylediv>
-//     <h1>  We make the world a better place for pets by investing in community
-//  partners that advocate and care for the well-being of pets and all who love them. </h1>
-//   </AboutStylediv>
-// )
-// }
-// export default About;

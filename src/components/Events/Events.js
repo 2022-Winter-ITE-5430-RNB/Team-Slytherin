@@ -1,5 +1,11 @@
 import React from 'react';
 import { EventStylediv } from './EventStyling'
+import { Container } from 'react-bootstrap'
+
+import cat2 from '../Images/c2.jpg'
+import cat4 from '../Images/c4.jpg'
+import dog1 from '../Images/d1.jpeg'
+import dog4 from '../Images/d4.jpg'
 
 const Events = () => {
   return (
@@ -23,8 +29,17 @@ const Events = () => {
         subject to change, it is always best to confirm an animal's attendance and event
          adoption status with their adoption coordinator (email listed in their bio). 
          </p>
-  
-
+       <Container>
+          <h2>May 07,2022  11:00 AM --- 3:00 PM</h2>
+           <img src={dog4} className='img' alt="d4"  height="290" widht="470"/>
+           <h2>June 07,2022  11:00 AM --- 3:00 PM</h2>
+           <img src={cat2} className='img' alt="c2" height="290" widht="460"/>
+           <h2>July 10,2022  11:00 AM --- 3:00 PM</h2>
+           <img src={dog1} className='img' alt="d1" height="290" widht="460"/>
+           <img src={cat4} className='img' alt="c4" height="290" widht="460"/>
+           
+       </Container>
+        
 
 </EventStylediv>
 )

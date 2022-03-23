@@ -5,7 +5,7 @@ import FileNotFound from './Home/FileNotFound'
 import Footer from './Home/Footer'; 
 import Events from './Events/Events'
 import Home from './Home/Home'
-import About from './Experience/About'
+import About from './About/About'
 import  Raise from  './Raise/Raise'
 import Navigation from './Home/Navigation'
 

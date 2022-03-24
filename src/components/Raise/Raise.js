@@ -1,6 +1,8 @@
 import React from 'react'
 import { RaiseStylediv } from './RaiseStyling'
 
+
+
 const Raise = () => {
   return (
     <RaiseStylediv>
@@ -8,6 +10,8 @@ const Raise = () => {
       <h3>It is important to know how the animal will react at home, on the street
          and even with other people, we must also know what to do about it. Always with 
          patience and lots of affection.</h3>
+                   
+                   
         <h2>Life Balance</h2>
       <p>Your pet is part of your family it's important to manage your time properly.
        We are all pretty busy especially if we are parents shuttling our children

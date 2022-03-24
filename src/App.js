@@ -1,33 +1,20 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import FAQS from './components/FAQ/FAQS';
+import logo from './logo.svg';
+import Header from './components/Header';
 import './App.css';
-import Home from './components/Home/Home';
-import Navigation from './components/Home/Navigation';
-import About from './components/About/About';
-import Events from './components/Events/Events';
-import Raise from './components/Raise/Raise';
+
+import { useEffect } from "react";
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './components/Home/Footer';
+import FAQS from './components/FAQ/FAQS';
 
 
-
-
-const App = () => {
-  return (    
-    
-    <BrowserRouter>    
-      <Navigation />
-      <Routes>
-        <Route path='home' element={<Home />} />        
-        <Route path='FAQS' element={<FAQS />} />
-        <Route path='Events' element={<Events />} />
-         <Route path='About' element={<About />} />
-        <Route path='Raise' element={<Raise />} />
-      </Routes>
-
-  </BrowserRouter>
-  )
+function App() {
+  return (
+    <>
+      <Header></Header>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
-
-

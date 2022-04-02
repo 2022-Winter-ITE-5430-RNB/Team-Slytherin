@@ -2,18 +2,16 @@ import styled from "styled-components";
 
 export const RaiseStylediv = styled.div`    
     margin: auto;    
-    
-    border: none;   
-    text-align:left;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 10px;
+    border: none; 
+    background: #FFFFE0;   
+    padding: 50px;
+    display: auto;
+    align-items: center;    
+    min-height: 100vh;
     padding-bottom: 2.5rem
     position: relative;
     min-height: 100vh;
-    ont-family: arial;
+    font-family: arial;
   
-  background-color: rgb(234, 239, 241);  
-
-    `
+     `
     

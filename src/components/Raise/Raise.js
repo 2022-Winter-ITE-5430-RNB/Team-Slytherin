@@ -1,9 +1,31 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+//import React from 'react'
 import { RaiseStylediv } from './RaiseStyling'
-
+import axios from 'axios';
 
 
 const Raise = () => {
+  
+      const [raise, setRaise] = useState([]);
+
+    useEffect(() => {
+        sendApiRequest();
+    }, []);
+
+    const sendApiRequest = async () => {
+        try {
+            const response = await axios.get(
+                'http://localhost:5000/api/raises/'
+            );
+            setRaise(response.data);
+            console.log(response);
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
+
+
   return (
     <RaiseStylediv>
       <h1> Important Steps that helps in raising a Pet</h1>

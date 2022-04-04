@@ -24,7 +24,7 @@ const Raise = () => {
         }
     };
 
-
+   
 
   return (
     <RaiseStylediv>

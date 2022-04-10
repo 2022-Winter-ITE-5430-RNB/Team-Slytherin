@@ -1,11 +1,12 @@
 import React from 'react';
-import { EventStylediv } from './EventStyling'
+import { EventStylediv, First, Second, Third, Fourth } from './EventStyling'
 import { Container } from 'react-bootstrap'
 
-import cat2 from '../Images/c2.jpg'
-import cat4 from '../Images/c4.jpg'
-import dog1 from '../Images/d1.jpeg'
-import dog4 from '../Images/d4.jpg'
+import cat2 from './EventImages/c2.jpg'
+
+import dog1 from './EventImages/d1.jpeg'
+import dog4 from './EventImages/d4.jpg'
+import aa from './EventImages/aa.jpg'
 
 const Events = () => {
   return (
@@ -27,13 +28,26 @@ const Events = () => {
        attendance and event adoption status with their adoption coordinator (email listed in their bio). 
          </p>
        <Container>
-          <h2>May 07,2022  11:00 AM --- 3:00 PM</h2>
-           <img src={dog4} className='img' alt="d4"  height="290" widht="470"/>
-           <h2>June 07,2022  11:00 AM --- 3:00 PM</h2>
-           <img src={cat2} className='img' alt="c2" height="290" widht="460"/>
-           <h2>July 10,2022  11:00 AM --- 3:00 PM</h2>
-           <img src={dog1} className='img' alt="d1" height="290" widht="460"/>
-           
+           <First>
+           <h2>Dogs Events </h2>
+           <h3> May 07,2022 at 11:00 AM - 3:00 PM</h3>
+           <img src={dog4} className='img' alt="d4" height="244" width="430"/>
+           </First>
+           <Second>
+           <h2>Coolest Cats Events </h2>
+           <h3>June 07,2022 at 11:00 AM - 3:00 PM</h3>
+           <img src={cat2} className='img' alt="c2" height="244" widht="460"/>
+           </Second>
+           <Third>
+           <h2>Dog Walk Event </h2>
+           <h3>July 10,2022  11:00 AM --- 3:00 PM</h3>
+           <img src={dog1} className='img' alt="d1" height="244" widht="460"/>
+           </Third>
+           <Fourth>
+           <h2>Sheep Dogs Event </h2>
+           <h3>August 10,2022  11:00 AM --- 4:00 PM</h3>
+           <img src={aa} className='img' alt="sh" height="244" widht="460"/>
+           </Fourth>
        </Container>
         
 
@@ -44,5 +58,3 @@ const Events = () => {
 
 
 export default Events;
-
-

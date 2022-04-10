@@ -3,16 +3,14 @@ import styled from "styled-components";
 export const FormStyle = styled.form`
     width: 100%;
     background: #FFFFE0; 
-    padding: 30px;
-    display: auto;
-    align-items: center;    
+    padding: 50px;
     min-height: 100vh;
 `;
 
 export const Head = styled.h1`
     color: black;        
     width: 60%;
-    padding: 10px;    
+    padding: 5px;    
 `;
 
 export const PetCategory = styled.select`
@@ -69,7 +67,7 @@ export const SubmitPost = styled.button`
 export const Image = styled.img`
   float:right;
   margin-left:10px;
-  margin-right:50px;
+  margin-right:150px;
   border: 1px solid black;
   border-radius: 4px;
   padding: 0px;

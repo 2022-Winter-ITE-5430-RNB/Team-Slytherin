@@ -6,15 +6,13 @@ export const ClinicHeading = styled.h1`
     font-size: 3rem;        
 `
 
-export const EachClinic = styled.div`               
+export const EachClinic = styled.div`   
+    align-items: center;
+    border-radius: 15px;
+    border: 3px ;     
     width: 19%;
-    margin-left: 42.5%;
-    font-size: 2rem;
-    border-style: double;
-    border-color: black;    
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;    
+    margin: auto;
+    font-size: 2rem;    
 `
 
 export const Searchbox = styled.input.attrs({type: 'text'})`
@@ -42,5 +40,4 @@ export const Filter = styled.div`
 
 export const AllClinics = styled.div`    
     background-color:#FFFFE0;
-    min-height: 100vh;
 `;

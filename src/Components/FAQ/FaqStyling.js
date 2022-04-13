@@ -11,10 +11,9 @@ export const FAQSection = styled.div`
     display: flex;
     flex-direction: column;              
     position: relative;
-    min-height: 100vh;
 `
 
-export const Question = styled.div`
+export const Question = styled.div`       
     justify-content: space-between;
     align-items: center;    
     text-align: center;
@@ -49,14 +48,6 @@ export const Button = styled.button`
   border: 2px solid darkcyan;
   border-radius: 3px;
 `
-export const Input = styled.input`
-
-  font-size:1.5em;
-  margin: .5em;
-  
-  border: 2px solid darkcyan;
-  border-radius: 1px;
-`
 export const PetDesc = styled.div`   
     justify-content: space-between;
     align-items: center;
@@ -65,14 +56,5 @@ export const PetDesc = styled.div`
     cursor: pointer;
     font-size: 20px;     
     margin: auto;   
-     
-`
-export const Label = styled.label`   
-      color: darkcyan;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-    font-size: 15px;     
-    margin: 1px;   
      
 `

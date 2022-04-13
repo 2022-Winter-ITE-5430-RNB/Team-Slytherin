@@ -1,11 +1,14 @@
 import React from 'react'
+import { useState } from 'react';
 import { ButtonGroup } from 'react-bootstrap'
 import { ButtonToolbar } from 'react-bootstrap'
 import { FAQHeading, Button, EachFAQ, FAQSection } from '../FAQ/FaqStyling'
+import { Head, Page_Left, Page_Right, Image,  Form,   Password, Error } from '../Auth/AuthStyling'
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 
 const DeletePet = (props) => {
+    const [err_message, set_err_message] = useState('');  
     let petid = localStorage.getItem('petid').toString()
     const navigate = useNavigate();
     let data = {
@@ -26,8 +29,9 @@ const DeletePet = (props) => {
           console.log(response);
           navigate('/');
          
-        } catch (error) {
-          console.log(error)
+        } catch (err) {
+          console.log(err)
+          set_err_message(err.response.data.errors)
         }
     
       }
@@ -39,8 +43,9 @@ const DeletePet = (props) => {
     onClick={()=>{
       if(window.confirm('Do you want to delete this Pet?')){deletePet()};}}>Delete
       </Button>
+     
   </ButtonGroup>
-
+  <Error>{err_message}</Error>
   </div>
   )
 }

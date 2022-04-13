@@ -26,12 +26,14 @@ const Header = () => {
 
   const login = () => {
     setIsLoggedIn(true);
+   
   };
 
   const logout = () => {
     localStorage.removeItem('token');
     setIsLoggedIn(false);
   };
+  
 
   let approutes;
   if (isLoggedIn) {

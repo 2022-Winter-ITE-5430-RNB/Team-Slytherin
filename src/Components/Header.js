@@ -16,6 +16,7 @@ import AdoptDetails from './Adoption/AdoptDetails';
 import Rehome from './Rehome/Rehome';
 import Login from './Auth/Login';
 import Logout from './Auth/Logout';
+import Donation from './Donation/Donation';
 import Register from './Auth/Register';
 import AuthContext from '../Context/AuthContext';
 import PetDetails from './Adoption/PetDetails'
@@ -26,7 +27,6 @@ const Header = () => {
 
   const login = () => {
     setIsLoggedIn(true);
-   
   };
 
   const logout = () => {
@@ -34,7 +34,6 @@ const Header = () => {
     setIsLoggedIn(false);
   };
   
-
   let approutes;
   if (isLoggedIn) {
     approutes = (
@@ -45,10 +44,10 @@ const Header = () => {
         <Route path='Contact' element={<ContactForm />} />
         <Route path='Events' element={<Events />} />
         <Route path='PetDetails' element={<PetDetails />} />
-        <Route path='Contact' element={<ContactForm />} />
         <Route path='Clinics' element={<Clinics />} />
         <Route path='Rehome' element={<Rehome />} />
         <Route path='*' element={<FileNotFound />} />
+        <Route path='Donation' element={<Donation />} />
         <Route path='About' element={<About />} />
         <Route path='Raise' element={<Raise />} />
         <Route path='Logout' element={<Logout />} /> 
@@ -60,8 +59,8 @@ const Header = () => {
       <Routes>
         <Route path='/' element={<Login />} />
         <Route path='Contact' element={<ContactForm />} />
-        <Route path='Contact' element={<ContactForm />} />
         <Route path='*' element={<FileNotFound />} />
+        <Route path='Donation' element={<Donation />} />
         <Route path='About' element={<About />} />
         <Route path='Login' element={<Login />} />
         <Route path='Register' element={<Register />} />

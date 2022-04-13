@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react'
 import {useNavigate } from 'react-router-dom';
 import { FormStyle, Head, InputText, InputTextArea, PetCategory, SubmitPost, Image, } from './AboutStyling'
@@ -9,7 +8,7 @@ const About = () => {
 
   const navigate = useNavigate();
 
-  const [formData2, setFromDate] = useState({
+  const [formData, setFromDate] = useState({
     
     ptype: '',
     pbreed: '',
@@ -20,10 +19,10 @@ const About = () => {
 
   const [myFile, setFile] = useState();
 
-  const { ptype, pbreed, pneeds, phabbits, experience } = formData2;
+  const { ptype, pbreed, pneeds, phabbits, experience } = formData;
 
   const onChange = (p) => {
-       setFromDate({ ...formData2, [p.target.ptype]: p.target.value });
+       setFromDate({ ...formData, [p.target.ptype]: p.target.value });
   };
 
   const onChange2 = (p) => {
@@ -95,17 +94,5 @@ const About = () => {
   }
 
 export default About
-
-
-
-
-
-
-
-
-
-
-
-
 
 

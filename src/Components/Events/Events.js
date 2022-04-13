@@ -47,12 +47,12 @@ const Events = () => {
            </Second>
            <Third>
            <h2>Dog Walk Event </h2>
-           <h3>July 09,2022  11:00 AM --- 3:00 PM</h3>
+           <h3>July 09,2022  11:00 AM - 3:00 PM</h3>
            <img src={dog1} className='img' alt="d1" height="244" widht="460"/>
            </Third>
            <Fourth>
            <h2>Sheep Dogs Event </h2>
-           <h3>August 13,2022  11:00 AM --- 4:00 PM</h3>
+           <h3>August 13,2022  11:00 AM - 4:00 PM</h3>
            <img src={aa} className='img' alt="sh" height="244" widht="460"/>
            </Fourth>
 

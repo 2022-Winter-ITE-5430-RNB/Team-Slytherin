@@ -38,8 +38,7 @@ const Home = () => {
   return (
     <>
     <HomeStylediv>
-      <Head> Welcome to Ado-Pet </Head>
-      <Image src={adopt}/>
+      <Head> Welcome to Ado-Pet </Head>      
       <div className='container'>
       <Box sx={{ flexGrow: 1 }}>
       <Grid container >

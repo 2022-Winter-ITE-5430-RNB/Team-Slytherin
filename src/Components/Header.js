@@ -26,7 +26,7 @@ const Header = () => {
 
   const login = () => {
     setIsLoggedIn(true);
-   
+    localStorage.setItem('petid', '624330e6f946edf4e133f8b1');
   };
 
   const logout = () => {

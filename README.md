@@ -13,7 +13,6 @@ There is also a chance to contribute to animal welfare by donating a desired amo
 
 # Preeti --
 1. Pets - (Add/Update/Delete or show all pets from Adopet)
-2. Home page
 
 # Jasveer --
 1. About -  Share valuable experience with your pet

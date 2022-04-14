@@ -46,34 +46,6 @@ const Raises = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
            <h1>Life Balance</h1>
         <p>Your pet is part of your family it's important to manage your time properly.
         We are all pretty busy especially if we are parents shuttling our children

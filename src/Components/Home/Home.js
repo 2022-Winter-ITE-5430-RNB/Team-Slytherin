@@ -39,7 +39,7 @@ const Home = () => {
     <>
     <HomeStylediv>
       <Head> Welcome to Ado-Pet </Head>
-      <Image src={adopt}/>
+      
       <div className='container'>
       <Box sx={{ flexGrow: 1 }}>
       <Grid container >

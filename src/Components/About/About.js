@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react'
 import {useNavigate } from 'react-router-dom';
 import { FormStyle, Head, InputText, InputTextArea, PetCategory, SubmitPost, Image } from './AboutStyling'
@@ -27,7 +26,7 @@ const About = () => {
   };
 
   const onChange = (p) => {
-    console.log("onChange2");
+    console.log("onChange");
     setFile(p.target.files[0]);
   };
 
@@ -97,17 +96,5 @@ const About = () => {
   }
 
 export default About
-
-
-
-
-
-
-
-
-
-
-
-
 
 

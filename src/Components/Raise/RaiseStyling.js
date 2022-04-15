@@ -5,7 +5,7 @@ export const RHead = styled.h1`
     text-align: left;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 0rem;
     font-size: 3rem;
     font-family: Cambria;    

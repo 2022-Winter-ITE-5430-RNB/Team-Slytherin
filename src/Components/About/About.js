@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {useNavigate } from 'react-router-dom';
-import { FormStyle, Head, InputText, InputTextArea, PetCategory, SubmitPost, Image,Error } from './AboutStyling'
+import { FormStyle, Head, InputText, InputTextArea, PetCategory, SubmitPost, Image, Error } from './AboutStyling'
 import ex from './AboutImage/ex.jpg'
 import axios from 'axios';
 
@@ -10,7 +10,7 @@ const About = () => {
 
   const [err_message, set_err_message] = useState('');
 
-  const [formData2, setFromDate] = useState({
+    const [formData2, setFromDate] = useState({
     
     ptype: '',
     pbreed: '',
@@ -24,7 +24,7 @@ const About = () => {
   const { ptype, pbreed, pneeds, phabbits, experience } = formData2;
 
   const onUpdate = (p) => {
-       setFromDate({ ...formData2, [p.target.ptype]: p.target.value });
+       setFromDate({ ...formData2, [p.target.name]: p.target.value });
   };
 
   const onChange = (p) => {
@@ -91,15 +91,13 @@ const About = () => {
           <InputTextArea placeholder='Share your experience' name='experience' value={experience} onChange={(p) => onUpdate(p)}></InputTextArea> <br></br><br></br>
   
                   <SubmitPost type='button'>Post</SubmitPost>
-           <Error>
+          <Error>
             {err_message}
           </Error>
-
+                
         </FormStyle>
       </div>
     )
   }
 
 export default About
-
-

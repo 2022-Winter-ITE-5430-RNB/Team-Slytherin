@@ -38,10 +38,13 @@ const AdoptDetails = (props) => {
       <ButtonToolbar aria-label="Action on the pets">
         {
           showEdit ?
-            <></> :
+          <ButtonGroup className="me-2" aria-label="Edit Pet">
+              <Button onClick={editClicked}>Cancel</Button>
+            </ButtonGroup> :
             <ButtonGroup className="me-2" aria-label="Edit Pet">
               <Button onClick={editClicked}>Edit</Button>
             </ButtonGroup>
+            
         }
 
         <DeletePet key ={petid} ></DeletePet>
@@ -57,18 +60,23 @@ const AdoptDetails = (props) => {
       <Container>
           <Row>
             <Col>
-              <Carousel>
-                <Carousel.Item>
-                  <img src={pupimg1} className='img-css' alt="puppy1" />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src={pupimg2} className='img-css' alt="puppy2" />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src={pupimg3} className='img-css' alt="puppy3" />
-                </Carousel.Item>
-              </Carousel>
-
+              
+              {
+               
+               petDetails.map((pet,index) => {
+                 console.log(pet.name);
+                 let url = 'http://localhost:5000/uploads/'
+                 const petPic = !!(pet.petImage)?url+pet.petImage:pupimg1;
+                 return(
+                   index===0?                
+                 
+                     <img src={petPic}  alt={pet.name} />:
+                  
+                   <div></div>
+                   
+                 )
+                 
+               })}
 
             </Col>
             <Col>

@@ -8,6 +8,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 
+
 import {useState,useEffect} from 'react'
 import axios from 'axios'
 import PetCard from './PetCard';
@@ -37,7 +38,7 @@ const Home = () => {
   return (
     <>
     <HomeStylediv>
-      <Head> Welcome to Ado-Pet </Head>            
+      <Head> Welcome to Ado-Pet </Head>      
       <div className='container'>
       <Box sx={{ flexGrow: 1 }}>
       <Grid container >

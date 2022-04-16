@@ -56,6 +56,22 @@ export const PetDesc = styled.div`
     text-align: center;
     cursor: pointer;
     font-size: 20px;     
-    margin: auto;   
-     
+    margin: auto;        
+`
+
+export const Label = styled.label`   
+      color: darkcyan;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;     
+    margin: 1px;   
+`
+export const Input = styled.input`
+
+  font-size:1.5em;
+  margin: .5em;
+  
+  border: 2px solid darkcyan;
+  border-radius: 1px;
 `

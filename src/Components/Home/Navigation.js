@@ -38,7 +38,7 @@ const Navigation = () => {
             <li>
               <Link to='Events'>Events</Link>
             </li>
-            <li>
+             <li>
               <Link to='About'>About</Link>
             </li>
             <li>

@@ -65,14 +65,13 @@ const About = () => {
       navigate('/');
      } catch (err) {
       set_err_message(err.response.data.errors);
-      console.log(err)
-      console.log(err.response);
+      console.log(err);
+      
     }
   };
 
       return (
-        
-      <div>
+        <div>
         <FormStyle onSubmit={(p) => onSubmit(p)}>
           <Head> Share Experience How to Raise a Pet </Head><br></br>
           
@@ -91,13 +90,15 @@ const About = () => {
           <InputTextArea placeholder='Share your experience' name='experience' value={experience} onChange={(p) => onUpdate(p)}></InputTextArea> <br></br><br></br>
   
                   <SubmitPost type='button'>Post</SubmitPost>
-          <Error>
+
+         <Error>
             {err_message}
-          </Error>
-                
+          </Error>  
+          
         </FormStyle>
       </div>
+     
     )
-  }
+      } 
 
 export default About

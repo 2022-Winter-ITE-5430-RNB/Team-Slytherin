@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import {useNavigate } from 'react-router-dom';
-import { FormStyle, Head, InputText, InputTextArea, PetCategory, SubmitPost, Image } from './AboutStyling'
+import { FormStyle, Head, InputText, InputTextArea, PetCategory, SubmitPost, Image, Error } from './AboutStyling'
 import ex from './AboutImage/ex.jpg'
 import axios from 'axios';
 
 const About = () => {
 
   const navigate = useNavigate();
+
+  const [err_message, set_err_message] = useState('');
 
     const [formData2, setFromDate] = useState({
     
@@ -62,14 +64,14 @@ const About = () => {
       console.log(response);
       navigate('/');
      } catch (err) {
-            console.log(err)
-      console.log(err.response);
+      set_err_message(err.response.data.errors);
+      console.log(err);
+      
     }
   };
 
       return (
-        
-      <div>
+        <div>
         <FormStyle onSubmit={(p) => onSubmit(p)}>
           <Head> Share Experience How to Raise a Pet </Head><br></br>
           
@@ -89,12 +91,14 @@ const About = () => {
   
                   <SubmitPost type='button'>Post</SubmitPost>
 
-                
+         <Error>
+            {err_message}
+          </Error>  
+          
         </FormStyle>
       </div>
+     
     )
-  }
+      } 
 
 export default About
-
-

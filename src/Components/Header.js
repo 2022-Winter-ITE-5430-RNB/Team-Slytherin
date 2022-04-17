@@ -5,6 +5,7 @@ import FAQS from './FAQ/FAQS'
 import FileNotFound from './Home/FileNotFound'
 import Footer from './Home/Footer';
 import Events from './Events/Events'
+import EventDetails from './Events/EventDetails'
 import About from './About/About'
 import Raise from './Raise/Raise'
 import Home from './Home/Home'
@@ -44,6 +45,7 @@ const Header = () => {
         <Route path='Create' element={<AdoptRequest />} />
         <Route path='Contact' element={<ContactForm />} />
         <Route path='Events' element={<Events />} />
+        <Route path='EventDetails' element={<EventDetails />} />
         <Route path='PetDetails' element={<PetDetails />} />
         <Route path='Contact' element={<ContactForm />} />
         <Route path='Clinics' element={<Clinics />} />

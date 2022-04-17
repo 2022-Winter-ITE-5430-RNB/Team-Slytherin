@@ -23,6 +23,9 @@ const Navigation = () => {
               <Link to='/'>Home</Link>
             </li>
             <li>
+              <Link to='PetDetails'>Pet Details</Link>
+            </li>
+            <li>
               <Link to='Raise'>Raise</Link>
             </li>
             <li>
@@ -40,7 +43,7 @@ const Navigation = () => {
             <li>
               <Link to='Donation'>Donation</Link>
             </li>
-             <li>
+            <li>
               <Link to='About'>About</Link>
             </li>
             <li>
@@ -52,6 +55,7 @@ const Navigation = () => {
           </>
         ) : (
           <>
+          
             <li>
               <Link to='/'>Login</Link>
             </li>

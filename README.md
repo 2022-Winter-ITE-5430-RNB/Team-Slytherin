@@ -23,3 +23,6 @@ There is also a chance to contribute to animal welfare by donating a desired amo
 1. Chat
 2. Contact
 3. feedback(Testimonials)
+
+# Greg --
+1. Donation

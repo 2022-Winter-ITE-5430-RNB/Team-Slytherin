@@ -73,7 +73,7 @@ const About = () => {
       return (
         <div>
         <FormStyle onSubmit={(p) => onSubmit(p)}>
-          <Head> Share Experience How to Raise a Pet </Head><br></br>
+          <Head> Share Experience With a Pet </Head><br></br>
           
           <Image src={ex} />
           

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const DonationHeading = styled.h1`
-    text-align: center;
-    font-size: 3rem;        
+export const DonationHeading = styled.h1`    
+    font-size: 3rem;
+    margin-left: 35%;
 `
 
 export const FooterStyle = styled.div`
@@ -26,6 +26,7 @@ export const Image = styled.img`
   width: 40%;
   justify-content: center;
   display: flex;
+  margin-left: 22.5%;
 `;
 
 export const Searchbox = styled.input.attrs({type: 'text'})`
@@ -53,10 +54,10 @@ export const PageLeft = styled.div`
 `;
 
 export const EachDonation = styled.div`  
-    font-size: 2rem;
-    display: flex;
+    font-size: 2rem;    
     justify-content: center;
-    padding: 10px 0; 
+    padding: 10px 0;
+    margin-left: 22.5%;     
 `;
 
 export const AllDonations = styled.div`  
